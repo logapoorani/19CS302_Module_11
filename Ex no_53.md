@@ -3,25 +3,22 @@
 ## AIM:
 To write a C program to remove duplicates in an array.
 
-## Algorithm:
-1. **Start**  
-2. Input the number of elements `n`.  
-3. Input `n` elements into the array.  
-4. Create an empty temporary array `temp` to store unique elements.  
-5. Initialize an index variable `index = 0`.  
-6. Loop through each element in the original array:  
-   - Check if the element already exists in `temp`.  
-   - If the element is not a duplicate, add it to `temp` and increment `index`.  
-7. Copy the elements from `temp` back to the original array.  
-8. Update `n` to the new size of the array.  
-9. Print the modified array without duplicates.  
-10. **End**  
-
-This step-by-step method ensures that duplicates are effectively removed while maintaining the order of unique elements. Let me know if you need optimizations! 🚀
- 
+## Algorithm
+1. Start
+2. Input the number of elements n.
+3. Input n elements into the array.
+4. Create an empty temporary array temp to store unique elements.
+5. Initialize an index variable index = 0.
+6. Loop through each element in the original array:
+ Check if the element already exists in temp.
+ If the element is not a duplicate, add it to temp and increment index.
+7. Copy the elements from temp back to the original array.
+8. Update n to the new size of the array.
+9. Print the modified array without duplicates.
+10. End   
 
 ## Program:
-```c program
+```
 #include <stdio.h>
 
 void removeDuplicates(int arr[], int *n) {
@@ -72,7 +69,8 @@ int main() {
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/56f5c64c-b809-461f-8156-695f95722459)
+<img width="709" height="153" alt="image" src="https://github.com/user-attachments/assets/9c3b4259-1717-4fe9-9ac0-9f42c2782aa4" />
+
 
 
 ## Result:
