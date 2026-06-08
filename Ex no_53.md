@@ -1,75 +1,43 @@
-# EX 53 C program to remove duplicates in an array.
+# EX 53 C program to input marks of five subjects of a student and calculate total, average and percentage of all subjects. How to calculate total, average and percentage in C programming. Logic to find total, average and percentage in C program. use float data type for all variable.
 ## DATE:
 ## AIM:
-To write a C program to remove duplicates in an array.
-
+c program to input marks of five subjects of a student and calculate total, average and percentage of all subjects.
 ## Algorithm
 1. Start
-2. Input the number of elements n.
-3. Input n elements into the array.
-4. Create an empty temporary array temp to store unique elements.
-5. Initialize an index variable index = 0.
-6. Loop through each element in the original array:
- Check if the element already exists in temp.
- If the element is not a duplicate, add it to temp and increment index.
-7. Copy the elements from temp back to the original array.
-8. Update n to the new size of the array.
-9. Print the modified array without duplicates.
-10. End   
-
+2. Declare five float variables for marks:
+  sub1, sub2, sub3, sub4, sub5
+3. Declare float variables:
+  total, average, percentage
+4. Input marks of the five subjects.
+5. Calculate total marks:
+  total = sub1 + sub2 + sub3 + sub4 + sub5
+6. Calculate average marks:
+  average = total / 5
+7. Calculate percentage:
+  percentage = (total / 500) * 100
+  (Assuming each subject is out of 100 marks)
+8. Display total, average, and percentage.  
+9. stop.
 ## Program:
 ```
-#include <stdio.h>
+#include<stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5;
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    float total,avg,per;
 
-void removeDuplicates(int arr[], int *n) {
-    int temp[*n];
-    int index = 0;
-
-    for (int i = 0; i < *n; i++) {
-        int duplicate = 0;
-        for (int j = 0; j < index; j++) {
-            if (arr[i] == temp[j]) {
-                duplicate = 1;
-                break;
-            }
-        }
-        if (!duplicate) {
-            temp[index++] = arr[i];
-        }
-    }
-
-    for (int i = 0; i < index; i++) {
-        arr[i] = temp[i];
-    }
-
-    *n = index;
-}
-
-int main() {
-    int n;
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-
-    int arr[n];
-    printf("Enter the elements: ");
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    removeDuplicates(arr, &n);
-
-    printf("Array after removing duplicates: ");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    
-    return 0;
+    total=m1+m2+m3+m4+m5;
+    avg=total/5;
+    per=(avg*100)/100;
+    printf("%.6f\n%.6f\n%.6f",total,avg,per);
 }
 ```
 
 ## Output:
 
-<img width="709" height="153" alt="image" src="https://github.com/user-attachments/assets/9c3b4259-1717-4fe9-9ac0-9f42c2782aa4" />
+<img width="1101" height="584" alt="Screenshot (56)_25624" src="https://github.com/user-attachments/assets/da9d8bfd-19ff-43a8-b107-64acbb1e32c1" />
+
 
 
 
