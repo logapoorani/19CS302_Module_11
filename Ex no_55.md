@@ -1,22 +1,19 @@
-
 # EX 55 C program to find a square of number using function with arguments without return type.
 ## DATE:
 ## AIM:
 To write a C program to find a square of number using function with arguments without return type.
 
-## Algorithm:
-
-1. **Start**  
-2. Define a function `findSquare(num)` that takes an integer argument.  
-3. Inside the function, compute `num * num` and display the result.  
-4. In the `main()` function:  
-   - Accept an integer input from the user.  
-   - Call `findSquare(number)` with the input value.  
-5. **End**  
-
+## Algorithm
+1. Start
+2. Define a function findSquare(num) that takes an integer argument.
+3. Inside the function, compute num * num and display the result.
+4. In the main() function:
+5. Accept an integer input from the user.
+6. Call findSquare(number) with the input value.
+7. End  
 
 ## Program:
-```c program
+```
 #include <stdio.h>
 
 void findSquare(int num) {
@@ -35,7 +32,8 @@ int main() {
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/417382e7-5233-4f85-af71-e0b854b57f79)
+
+<img width="259" height="47" alt="image" src="https://github.com/user-attachments/assets/a0fb7afc-b07a-42ce-9d67-6c11c2510017" />
 
 
 
