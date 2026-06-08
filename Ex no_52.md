@@ -1,42 +1,35 @@
+## Task
 
+# Write a function int max_of_four(int a, int b, int c, int d) which reads four arguments and returns the greatest of them.
 
-# Task:
-
-## Write a function int max_of_four(int a, int b, int c, int d) which reads four arguments and returns the greatest of them.
-
-## Note:
+## Note
 
 There is not built in max function in C. Code that will be reused is often put in a separate function, e.g. int max(x, y) that returns the greater of the two values.
 
-## Input Format:
+## Input Format
 
 Input will contain four integers - a,b,c,d , one on each line.
 
-## Output Format:
+## Output Format
 
 Print the greatest of the four integers.
 Note: I/O will be automatically handled.
-## AIM:
- To write a function int max_of_four(int a, int b, int c, int d) which reads four arguments and returns the greatest of them.
- ## Algorithm:
-
-1. **Start**  
-2. Accept four integer inputs: `a`, `b`, `c`, and `d`.  
-3. Initialize `max` with `a`.  
-4. Compare `max` with `b`:  
-   - If `b` is greater than `max`, update `max = b`.  
-5. Compare `max` with `c`:  
-   - If `c` is greater than `max`, update `max = c`.  
-6. Compare `max` with `d`:  
-   - If `d` is greater than `max`, update `max = d`.  
-7. Return `max` as the largest number.  
-8. **End**  
-
-
- 
-
-## PROGRAM:
-```c program
+# AIM:
+To write a function int max_of_four(int a, int b, int c, int d) which reads four arguments and returns the greatest of them.
+# Algorithm:
+1. Start
+2. Accept four integer inputs: a, b, c, and d.
+3. Initialize max with a.
+4. Compare max with b:
+ If b is greater than max, update max = b.
+5. Compare max with c:
+ If c is greater than max, update max = c.
+6. Compare max with d:
+ If d is greater than max, update max = d.
+7. Return max as the largest number.
+8. End
+# PROGRAM:
+```
 #include<stdio.h>
 int compare(int a[4])
 {
@@ -57,7 +50,9 @@ int main()
     printf("%d",d);
 }
 ```
-## OUTPUT:
-![image](https://github.com/user-attachments/assets/aba6d6ba-c7c3-4607-9f04-a740cafd9845)
-## RESULT:
-Thus, the program is executed and verified successfully.
+# OUTPUT:
+<img width="1025" height="449" alt="image" src="https://github.com/user-attachments/assets/be59ee97-d60f-4a44-8989-eabcc21c2823" />
+
+
+# RESULT:
+Thus, the program is executed and verified successfully
